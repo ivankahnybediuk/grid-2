@@ -1,34 +1,61 @@
-// React Template
+let grid=
+<div className="grid">
+<div className="grid__big">
+    <p className="date">november 8, 2015</p>
+    <h1>Fantastic Designs Of 2015
+Concept Cars</h1>
+</div>
 
-// ================================================ JSX ==========================================================
-
-let myTitle = <h1>Hello React!</h1>;
-let ul=<ul className="ul">UL
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-</ul>
-let img=<img src="images/omg2.jpg"></img>
-let parargaph= <p>Paragraph</p>
-function plus(x,y) {
-    return x+y
-}
-let func = <p>
-    2+3={plus(2,3)}
+<div className="grid__element">
+    <img src="img/2.png"></img>
+    <p className="date">november 24, 2015</p>
+    <p className="topic">
+        How To Find Design 
+Inspiration In The Simple 
+Things Around You
 </p>
-let inp= <input type="text"></input>
+<div className="author"></div>
+</div>
 
+<div className="grid__element">
+<img src="img/3.png"></img>
+<p className="date">november 18, 2015</p>
+<p className="topic">
+    The Only Guide To 
+Choosing Website 
+Photos You’ll Ever Need
+</p>
+<div className="author"></div>
+</div>
 
-// Маємо скласти все в купу і можна виводити в HTML
-let page = <div>
-    {myTitle}
-    {ul}
-    {img}
-    {parargaph}
-    {func}
-    {inp}
-    </div>;
+<div className="grid__element">
+<img src="img/4.png"></img>
+<p className="date">november 13, 2015</p>
+<p className="topic">
+Growth Hack Your Way 
+to a Successful 
+Freelance Career
+</p>
+<div className="author"></div>
+</div>
 
-// ================================================ Render ==========================================================
+<div className="grid__element">
+<img src="img/5.png"></img>
+<p className="date">november 8, 2015</p>
+<p className="topic">
+Get 80% Off DSLR 
+Photography Course 
+Bundle
+</p>
+<div className="author"></div>
+</div>
+</div>
+// ======================page===============================
+
+let page=
+<div className="container">
+{grid}
+</div>
+// =======================DOM===============================
 
 ReactDOM.render(page, document.getElementById("root"));

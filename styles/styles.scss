@@ -1,37 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-
-* {
+body{
     margin: 0;
     padding: 0;
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 20px;
 }
-
-$color1: #ffffffff;
-$color2: #ffcad4ff;
-$color3: #b0d0d3ff;
-$color4: #c08497ff;
-$color5: #f7af9dff;
-
-body {
-    background-color: $color3;
-    padding: 20px;
+.container{
+    margin: 0;
+    width: 100%;
+    background-color: #e2e7ec;
 }
-
-h1 {
-    color: $color4;
-}
-.ul{
-    text-align: center;
-    font-size: 30px;
-    background-color: wheat;
-    border-radius: 10px;
-    list-style: none;
-    li{
-        margin: 0;
-        border:1px solid grey
+.grid{
+    width: 1120px;
+    height: 1100px;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    &__big{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: linear-gradient(#69686817,#050505de), url(../img/1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        h1{
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            width: 380px;
+            margin-left: 30px;
+            margin-bottom: 40px;
+        }
     }
-    li:hover{
-        background-color: grey;      
+    &__element{
+        background-color: white;  
+         min-width: 360px;
+         img{
+             width: 100%;
+         }
     }
+    
+}
+.date{
+    color: #818181;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    
+}
+.topic{
+    color: black;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: left;
+    margin:30px 30px 0 30px
+}
+.author{
+    background-image: url(../img/author.png);
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin:65px auto 30px 30px;
 }
